@@ -10,6 +10,10 @@ import matplotlib.pyplot as plt
 from collections import Counter
 from sklearn.preprocessing import MultiLabelBinarizer
 from sklearn.feature_extraction.text import CountVectorizer
+from skmultilearn.model_selection import iterative_train_test_split
+from sklearn.multiclass import OneVsRestClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import classification_report
 
 __all__ = [
     'kaggle', 
@@ -21,5 +25,10 @@ __all__ = [
     'Counter', 
     'plt', 
     'MultiLabelBinarizer',
-    'CountVectorizer'
+    'CountVectorizer',
+    'iterative_train_test_split',
+    'OneVsRestClassifier',
+    'LogisticRegression',
+    'classification_report'
+
 ]
