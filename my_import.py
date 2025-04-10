@@ -14,6 +14,8 @@ from skmultilearn.model_selection import iterative_train_test_split
 from sklearn.multiclass import OneVsRestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import classification_report
+from sklearn.metrics import jaccard_score
+
 
 __all__ = [
     'kaggle', 
@@ -29,6 +31,7 @@ __all__ = [
     'iterative_train_test_split',
     'OneVsRestClassifier',
     'LogisticRegression',
-    'classification_report'
+    'classification_report',
+    'jaccard_score'
 
 ]
