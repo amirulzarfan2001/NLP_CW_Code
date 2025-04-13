@@ -17,6 +17,12 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import jaccard_score
 from sklearn.feature_extraction.text import TfidfVectorizer
 import ast
+import nltk
+from nltk.stem import WordNetLemmatizer
+from nltk.corpus import stopwords
+import re
+from sklearn.naive_bayes import BernoulliNB
+from sklearn.naive_bayes import MultinomialNB
 
 def LR_OVA_prob(xtest,threshold,classifier):
     y_pred_prob = classifier.predict_proba(xtest)
