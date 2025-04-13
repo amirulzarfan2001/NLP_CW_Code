@@ -23,6 +23,7 @@ from nltk.corpus import stopwords
 import re
 from sklearn.naive_bayes import BernoulliNB
 from sklearn.naive_bayes import MultinomialNB
+from sklearn.metrics import f1_score
 
 def LR_OVA_prob(xtest,threshold,classifier):
     y_pred_prob = classifier.predict_proba(xtest)
